@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Us — TravelMate</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav-bar">
+  <span class="brand">🌍 TravelMate</span>
+  <span class="links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </span>
+</nav>
+
+<main class="content">
+  <article class="info-card">
+    <h2>Contact Us</h2>
+    <p>Questions, feedback, or a destination suggestion? Drop us a note —
+    we read every email.</p>
+
+    <p class="contact-info">
+      <strong>Email:</strong> <a href="mailto:hello@travelmate.example">hello@travelmate.example</a><br>
+      <strong>Phone:</strong> +1 (555) 222-4040<br>
+      <strong>Address:</strong> 1200 Wanderer Ave, Suite 300, Portland, OR 97205
+    </p>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <label>
+        Your name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Subject
+        <input type="text" name="subject" />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn-search" type="submit">Send Message</button>
+      <p class="form-status" id="formStatus" aria-live="polite"></p>
+    </form>
+  </article>
+</main>
+
+<footer>© TravelMate — Built for the JavaScript Programming Essentials final project.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
